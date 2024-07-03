@@ -1,4 +1,4 @@
-name: hello-world
+name: build-test-deploy
 on: push
 jobs: 
   hello-world-job:
@@ -6,7 +6,6 @@ jobs:
     steps: 
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo "$(cat hello_world.txt)"
       - name: use node.js 18
         uses: actions/setup-node@v3
         with:
